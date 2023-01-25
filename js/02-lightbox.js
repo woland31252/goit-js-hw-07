@@ -1,6 +1,5 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
-console.log()
 const gallery = document.querySelector('.gallery');
 const createGallery = galleryItems.map((image) => {
   return `
@@ -15,7 +14,11 @@ const createGallery = galleryItems.map((image) => {
   })
   .join('');
 gallery.insertAdjacentHTML('beforeend', createGallery);
-gallery.addEventListener('click', showGallery);
+
+new SimpleLightbox(".gallery a", {
+  captionsData: "alt",
+  captionDelay: 250,
+});
 
 
 console.log(galleryItems);
