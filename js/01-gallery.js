@@ -44,10 +44,7 @@ function showGallery(evt) {
     }
   );
   largImage.show();
-  console.log()
 }
 
 console.log(galleryItems);
-
-
 console.log(gallery)
